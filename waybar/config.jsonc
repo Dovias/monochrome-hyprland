@@ -1,15 +1,9 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 24, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "height": 24,
+    "spacing": 16,
     "modules-left": [
-        "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "hyprland/window"
@@ -19,10 +13,9 @@
         "network",
         "cpu",
         "memory",
-        "sway/language",
+        "hyprland/language",
         "clock",
-        "tray",
-        "custom/power"
+        "tray"
     ],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -35,13 +28,15 @@
             "default": ""
         }
     },
+    "hyprland/language": {
+         "format": " {short}"
+    },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
 	"interval": 1,
-	"format": "{:%H:%M:%S}",
+	"format": " {:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -53,7 +48,6 @@
         "format": " {}%"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid} ({signalStrength}%)",
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format": " {ifname} via {gwaddr}",
@@ -62,7 +56,6 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%   {format_source}",
         "format-bluetooth": " {icon} {volume}%   {format_source}",
         "format-bluetooth-muted": " {icon}   {format_source}",
