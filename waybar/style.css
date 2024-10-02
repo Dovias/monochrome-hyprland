@@ -1,54 +1,53 @@
 * {
-    font-family: Fira Code;
-    font-size: 13px;
+	font-family: FiraCode Nerd Font;
+	font-size: 13px;
 }
 
 window#waybar {
-    background: #000;
-    color: #fff;
+	background: #000;
+	color: #fff;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+	opacity: 0.2;
 }
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+	background-color: #3F3F3F;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
-    border: none;
+	background-color: #000000;
+	border: none;
 }
 
 button {
-    border: none;
-    border-radius: 0;
+	border: none;
+	border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+	background: inherit;
+	box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+	padding: 0 5px;
+	background-color: transparent;
+	color: #ffffff;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+	background-color: #64727D;
+	box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+	background-color: #eb4d4b;
 }
 
 #clock,
@@ -70,29 +69,27 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+	margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+	margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 
 label:focus {
-    background-color: #000000;
+	background-color: #000000;
 }
 
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+	-gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
+	-gtk-icon-effect: highlight;
 }

@@ -1,68 +1,68 @@
 // -*- mode: jsonc -*-
 {
-    "height": 24,
-    "spacing": 16,
-    "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
-    ],
-    "modules-right": [
-        "pulseaudio",
-        "network",
-        "cpu",
-        "memory",
-        "hyprland/language",
-        "clock",
-        "tray"
-    ],
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{icon}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-        }
-    },
-    "hyprland/language": {
-         "format": " {short}"
-    },
-    "tray": {
-        "spacing": 10
-    },
-    "clock": {
-	"interval": 1,
-	"format": " {:%H:%M:%S}",
-	"format-alt": " {:%Y-%m-%d}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "cpu": {
-        "format": " {usage}%",
-        "tooltip": false
-    },
-    "memory": {
-        "format": " {}%"
-    },
-    "network": {
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": " {ipaddr}/{cidr}",
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%   {format_source}",
-        "format-bluetooth": " {icon} {volume}%   {format_source}",
-        "format-bluetooth-muted": " {icon}   {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-icons": {
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    }
+	"height": 24,
+	"spacing": 16,
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/window"
+	],
+	"modules-right": [
+		"pulseaudio",
+		"network",
+		"cpu",
+		"memory",
+		"hyprland/language",
+		"clock",
+		"tray"
+	],
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"warp-on-scroll": false,
+		"format": "{icon}",
+		"format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+		}
+	},
+	"hyprland/language": {
+		"format": "  {short}"
+	},
+	"tray": {
+		"spacing": 10
+	},
+	"clock": {
+		"interval": 1,
+		"format": "  {:%H:%M:%S}",
+		"format-alt": "  {:%Y-%m-%d}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+	},
+	"cpu": {
+		"format": "  {usage}%",
+		"tooltip": false
+	},
+	"memory": {
+		"format": " {}%"
+	},
+	"network": {
+		"format-wifi": " {essid} ({signalStrength}%)",
+		"format-ethernet": " {ipaddr}/{cidr}",
+		"tooltip-format": " {ifname} via {gwaddr}",
+		"format-linked": " {ifname} (No IP)",
+		"format-disconnected": "⚠ Disconnected",
+		"format-alt": " {ifname}"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%   {format_source}",
+		"format-bluetooth": " {icon}  {volume}%   {format_source}",
+		"format-bluetooth-muted": " {icon}   {format_source}",
+		"format-muted": " {format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": "",
+		"format-icons": {
+			"default": ["", "", ""]
+		},
+		"on-click": "pavucontrol"
+	}
 }
