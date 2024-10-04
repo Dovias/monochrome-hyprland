@@ -3,8 +3,8 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = {
 		defaults = {
-			prompt_prefix = "🔍 ",
-			selection_caret = "➜ "
+			selection_caret = "  ",
+			prompt_prefix = "   "
 		}
 	},
 	config = function(_, opts)
