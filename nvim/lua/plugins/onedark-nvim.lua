@@ -1,6 +1,6 @@
 return {
 	"navarasu/onedark.nvim",
-	opts = { style = "darker" },
+	opts = { style = "warmer" },
 	config = function(_, opts)
 		local onedark = require("onedark")
 		onedark.setup(opts)
